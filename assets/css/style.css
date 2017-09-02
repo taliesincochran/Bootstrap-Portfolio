@@ -12,9 +12,14 @@ p {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	line-height: 1.5em;
 }
+.marginCorrect {
+	margin-left:15px;
+	margin-right:-15px;
+}
 .navbar-default .navbar-brand {
     color: #ffffff;
     width:100%;
+    padding-left
 }
 .panel-info > .panel-heading {
   color: #4aaaa5;
@@ -23,6 +28,9 @@ p {
 .main {
 	margin-top:50px;
 	margin-bottom:50px;
+  border-style: solid;
+  border-color: #eeeeee;
+  border-width: 1px;
 }
 .bg-white {
 	background: #ffffff;
@@ -45,10 +53,6 @@ p {
  .bg-teal {
   background-color: #4aaaa5;
 }
-/*.navbar-default {
-  background-color: #ffffff;
-  border-color: #cccccc;
-}*/
 .listTextPosition,
 .text-white {
 	color: #ffffff;
@@ -63,6 +67,10 @@ p {
 }
 .panel {
     border: none
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #eeeeee;
 }
 .panel-title {
     font-size: 18px;
@@ -79,15 +87,44 @@ p {
     border-top-style: solid;
     border-top-color: #4aaaa5;
     border-top-width: 8px;
+    background-color: #666666;
+    padding: 20px 0px 15px 0px;
 }
 .btn-primary {
 	background-color: #4aaaa5;
 }
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
+
 @media screen and (min-width:991px) {
 	.navbar-right {
-		margin-right:10%;}
+		/*margin-right:10%;*/}
 	}
-@media screen and (max-width:767px) {
+@media screen and (max-width:991px) {
+  .stackfix {
+  	margin: 0px -30px 50px 0px;
+  }
+  .stackfix2 {
+    margin: 0px -14px 50px -14px;
+}
+  .topMarginfix {
+  	margin: -25px 0px 25px 0px;
+  }
+  }
+
+@media (min-width: 768px) {
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left;
+}
+}
+@media screen and (max-width:768px) {
 .floatL {
 	float:left;
 	padding-left:8.75%;
@@ -96,8 +133,9 @@ p {
     border-left-width: 1px;
     border-left-style: solid;
 }
+}
 .navbar-brand {
-	padding: 5px 38% 5px 38%;
+/*	padding: 5px 38% 5px 38%;*/
 	text-align: center;
 }
 .navbar-header {
