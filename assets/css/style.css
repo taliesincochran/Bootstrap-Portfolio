@@ -98,11 +98,13 @@ p {
     margin-bottom: 0;
     text-align: right;
 }
+.textPaddingTop {
+	padding: 15px 15px 0px 15px;
+}
+.textPaddingBottom {
+	padding: 10px 15px 15px 15px;
+}
 
-@media screen and (min-width:991px) {
-	.navbar-right {
-		/*margin-right:10%;*/}
-	}
 @media screen and (max-width:991px) {
   .stackfix {
   	margin: 0px -30px 50px 0px;
